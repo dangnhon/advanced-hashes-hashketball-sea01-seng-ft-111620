@@ -134,7 +134,7 @@ def num_points_scored(name)
       if attribute == :players
       data.each do |player_stat|
         if player_stat[:player_name] == name
-          player_stat[:points]
+          return player_stat[:points]
           end
         end
       end
@@ -149,7 +149,7 @@ def shoe_size(name)
       if attribute == :players
         data.each do |player_stat|
           if player_stat[:player_name] == name
-            player_stat[:shoe]
+            return player_stat[:shoe]
           end
         end
       end
@@ -162,7 +162,7 @@ def team_colors(team_name_string)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if data == team_name_string
-        game_hash[location][:colors]
+        return game_hash[location][:colors]
       end
     end
   end
@@ -203,7 +203,7 @@ def player_stats(name)
       if attribute == :players
         data.each do |player_stat|
           if player_stat[:player_name] == name
-            player_stat
+            return player_stat
           end
         end
       end
@@ -220,8 +220,8 @@ def big_shoe_rebounds
         data.each do |player_stat|
             if player_stat[:shoe] > largest_num
               largest_num = player_stat[:shoe]
-              if largest_num == player_stat[:shoe]
-              player_stat[:rebounds]
+              if largest_num == player_stat[:shoe] 
+              return player_stat[:rebounds]
             end
           end
         end
