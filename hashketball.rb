@@ -219,7 +219,7 @@ def big_shoe_rebounds
       if attribute == :players
         data.each do |player_stat|
           player_stat.each do |single_stat|
-            largest_num = single_stat.max
+            largest_num = single_stat[:shoe].max
             binding.pry
             return player_stat[:rebounds]
 
