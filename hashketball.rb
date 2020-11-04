@@ -220,10 +220,8 @@ def big_shoe_rebounds
         data.each do |player_stat|
             if player_stat[:shoe] > largest_num
               largest_num == player_stat[:shoe]
-            binding.pry
             return player_stat[:shoe]
           end
-
         end
       end
     end
