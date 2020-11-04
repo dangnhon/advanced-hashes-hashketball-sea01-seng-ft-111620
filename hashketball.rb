@@ -202,7 +202,7 @@ def player_stats(name)
     team_data.each do |attribute, data|
       if attribute == :players
         data.each do |player_stat|
-          if player_stat[:player_name] == name 
+          if player_stat[:player_name] == name
             binding.pry
             return player_stat
           end
@@ -211,6 +211,3 @@ def player_stats(name)
     end
   end
 end
-
-
-          
