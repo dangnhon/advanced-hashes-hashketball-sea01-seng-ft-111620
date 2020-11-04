@@ -214,18 +214,19 @@ end
 
 def big_shoe_rebounds
   largest_num = 0
+  rebound_score = "" 
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if attribute == :players
         data.each do |player_stat|
             if player_stat[:shoe] > largest_num
               largest_num = player_stat[:shoe]
-              if player_stat[:shoe] == largest_num
-              return player_stat[:rebounds]
+              rebound_score = player_stat[:rebounds]
             end
           end
         end
       end
     end
   end
+  rebound_score
 end
