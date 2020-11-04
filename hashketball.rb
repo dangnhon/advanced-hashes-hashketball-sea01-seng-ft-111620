@@ -220,6 +220,7 @@ def big_shoe_rebounds
         data.each do |player_stat|
           player_stat.each do |single_stat|
             largest_num = single_stat[:shoe].max
+            binding.pry
             return player_stat[:rebounds]
           end
         end
