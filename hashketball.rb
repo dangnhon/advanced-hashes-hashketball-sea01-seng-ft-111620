@@ -220,7 +220,7 @@ def big_shoe_rebounds
         data.max_by do |player_stat|
             player_stat[:shoe]
             #binding.pry
-            return player_stat[:rebounds]
+            return player_stat[:shoe]
 
         end
       end
