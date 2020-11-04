@@ -218,8 +218,8 @@ def big_shoe_rebounds
     team_data.each do |attribute, data|
       if attribute == :players
         data.each do |player_stat|
-          player_stat.each do |single_stat|
-
+          
+          
             binding.pry
             return player_stat[:rebounds]
 
