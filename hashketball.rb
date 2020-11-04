@@ -219,7 +219,7 @@ def big_shoe_rebounds
       if attribute == :players
         data.max_by do |player_stat|
             player_stat[:shoe]
-            
+
             binding.pry
             return player_stat[:shoe]
 
