@@ -221,6 +221,7 @@ def big_shoe_rebounds
           if largest_num < player_stat[:shoe]
             largest_num = player_stat[:shoe]
             return player_stat[:rebounds]
+            binding.pry
           end
         end
       end
