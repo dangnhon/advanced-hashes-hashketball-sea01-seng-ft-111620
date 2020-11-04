@@ -221,7 +221,7 @@ def big_shoe_rebounds
           largest_num = game_hash[location][player_stat][:shoe].max
             binding.pry
             return player_stat[:rebounds]
-          
+
         end
       end
     end
